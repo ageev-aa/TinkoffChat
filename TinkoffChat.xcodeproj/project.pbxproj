@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2884280F20470E440028E834 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2884280E20470E440028E834 /* main.storyboard */; };
+		289AF5622055947D005E8089 /* ConversationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289AF5612055947D005E8089 /* ConversationsListViewController.swift */; };
 		28BBE1C1203DD36900DFD32A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BBE1C0203DD36900DFD32A /* AppDelegate.swift */; };
 		28BBE1C3203DD36900DFD32A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BBE1C2203DD36900DFD32A /* ViewController.swift */; };
 		28BBE1C8203DD36900DFD32A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28BBE1C7203DD36900DFD32A /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2884280E20470E440028E834 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		289AF5612055947D005E8089 /* ConversationsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsListViewController.swift; sourceTree = "<group>"; };
 		28BBE1BD203DD36900DFD32A /* TinkoffChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinkoffChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28BBE1C0203DD36900DFD32A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28BBE1C2203DD36900DFD32A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 			children = (
 				28BBE1C0203DD36900DFD32A /* AppDelegate.swift */,
 				28BBE1C2203DD36900DFD32A /* ViewController.swift */,
+				2884280E20470E440028E834 /* main.storyboard */,
+				289AF5612055947D005E8089 /* ConversationsListViewController.swift */,
 				28BBE1C7203DD36900DFD32A /* Assets.xcassets */,
 				28BBE1C9203DD36900DFD32A /* LaunchScreen.storyboard */,
 				28BBE1CC203DD36900DFD32A /* Info.plist */,
@@ -121,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28BBE1CB203DD36900DFD32A /* LaunchScreen.storyboard in Resources */,
+				2884280F20470E440028E834 /* main.storyboard in Resources */,
 				28BBE1C8203DD36900DFD32A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,6 +141,7 @@
 			files = (
 				28BBE1C3203DD36900DFD32A /* ViewController.swift in Sources */,
 				28BBE1C1203DD36900DFD32A /* AppDelegate.swift in Sources */,
+				289AF5622055947D005E8089 /* ConversationsListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +293,7 @@
 				28BBE1D1203DD36900DFD32A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
