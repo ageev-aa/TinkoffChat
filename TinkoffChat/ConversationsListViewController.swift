@@ -9,9 +9,15 @@
 
 import UIKit
 
-class ConversationsListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ConversationsListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, ThemesViewControllerDelegate {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBAction func changeThemeAction(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "themeViewController") as! ThemesViewController
+        vc.delegate = self
+        navigationController?.pushViewController(vc,animated: true)
+    }
     
     var allConversations: [[ConversationModel]] = [ConversationModel.onlineConversations, ConversationModel.historyConversations]
     
@@ -57,6 +63,16 @@ class ConversationsListViewController: UIViewController, UITableViewDataSource, 
 
         navigationController?.pushViewController(vc,animated: true)
     }
+    
+    // MARK: - ThemesviewControllerDelegate
+    
+    func themesViewController(_ controller: ThemesViewController!, didSelectTheme selectedTheme: UIColor!) {
+        if let color = selectedTheme{
+            self.view.backgroundColor = color
+        }
+        
+    }
+    
 
 
 }
