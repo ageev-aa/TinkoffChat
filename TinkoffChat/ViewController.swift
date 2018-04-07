@@ -83,7 +83,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
-        print("\(#function): \(editButton.frame)")
         
     }
 
@@ -92,37 +91,31 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        userPhotoImageView.layer.cornerRadius = addPhotoButton.frame.height/2
+        addPhotoButton.layer.cornerRadius = addPhotoButton.frame.height/2
         super.viewWillAppear(animated)
-        print (#function)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        userPhotoImageView.layer.cornerRadius = addPhotoButton.frame.height/2
-        addPhotoButton.layer.cornerRadius = addPhotoButton.frame.height/2
-        print("\(#function): \(editButton.frame)")
         // отличаются, потому что во viewDidLoad данные берутся из сториборда. viewDidAppear вызывается после 
         // того, как view появляется на экране (и размеры уже известны)
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        print (#function)
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        print (#function)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        print (#function)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        print (#function)
     }
 
 }
